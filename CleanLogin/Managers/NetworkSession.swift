@@ -13,6 +13,8 @@ protocol NetworkSession: AnyObject {
 }
 
 final class MockNetworkSession: NetworkSession {
+    var shouldAuthorizeStub: Bool?
+    
     func publisher(for request: URLRequest) -> AnyPublisher<Data, Error> {
         #if DEBUG
         
@@ -22,9 +24,9 @@ final class MockNetworkSession: NetworkSession {
         switch request.url?.absoluteString {
         case "nothttps://netguru.com/api/authMeInPlease":
             let path: String?
-            let shouldAuthorize = Bool.random()
+            let shouldAuthorizeValue = shouldAuthorizeStub ?? Bool.random()
             
-            switch shouldAuthorize {
+            switch shouldAuthorizeValue {
             case true:
                 path = Bundle.main.path(forResource: "AuthService+positiveResponse", ofType: "json")
             case false:

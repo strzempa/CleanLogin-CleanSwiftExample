@@ -27,25 +27,72 @@ final class NetworkManagerTests: XCTestCase {
         
         super.tearDown()
     }
-    
-    struct Resp: Decodable {}
-    
-    func test_givenNetworkManager_whenPublisherCreated_thenReturnsStatusOnSink() {
-        let expectation1 = expectation(description: "Wait for publisher to return")
-        var completion: Combine.Subscribers.Completion<Swift.Error>!
         
-        publisher().sink { status in
-            completion = status
-        } receiveValue: { _ in
-            expectation1.fulfill()
-        }.store(in: &bag)
+    func test_givenNetworkManager_whenPublisherSinkedOnProperEndpoint_andShouldNotAuthorize_thenReturnsNoData() {
+        session.shouldAuthorizeStub = false
+        let expectation1 = expectation(description: "Wait for publisher to return")
+        var completionStatus: Combine.Subscribers.Completion<Swift.Error>!
+        var responseData: DefaultAuthService.Response?
+        
+        publisher(urlString: "nothttps://netguru.com/api/authMeInPlease")
+            .sink { status in
+                completionStatus = status
+            } receiveValue: { value in
+                responseData = value
+                expectation1.fulfill()
+            }
+            .store(in: &bag)
         
         waitForExpectations(timeout: 0.1)
         
-        XCTAssertEqual(completion.debugDescription, "Optional(Combine.Subscribers.Completion<Swift.Error>.finished)")
+        XCTAssertNotNil(responseData)
+        XCTAssertEqual(completionStatus.debugDescription, "Optional(Combine.Subscribers.Completion<Swift.Error>.finished)")
     }
     
-    func publisher() -> AnyPublisher<Resp, Error> {
-        sut.publisher(for: URLRequest(url: URL(string: "nothttps://netguru.com/api/authMeInPlease")!))
+    func test__givenNetworkManager_whenPublisherSinkedOnProperEndpoint_andShouldAuthorize_thenReturnsNoData() {
+        session.shouldAuthorizeStub = true
+        let expectation1 = expectation(description: "Wait for publisher to return")
+        var completionStatus: Combine.Subscribers.Completion<Swift.Error>!
+        var responseData: DefaultAuthService.Response?
+        
+        publisher(urlString: "nothttps://netguru.com/api/authMeInPlease")
+            .sink { status in
+                completionStatus = status
+            } receiveValue: { value in
+                responseData = value
+                expectation1.fulfill()
+            }
+            .store(in: &bag)
+        
+        waitForExpectations(timeout: 0.1)
+        
+        XCTAssertNotNil(responseData)
+        XCTAssertEqual(completionStatus.debugDescription, "Optional(Combine.Subscribers.Completion<Swift.Error>.finished)")
+    }
+    
+    func test_givenNetworkManager_whenPublisherSinkedOnBrokenEndpoint_thenReturnsNoData() {
+        let expectation1 = expectation(description: "Wait for publisher to return")
+        var completionStatus: Combine.Subscribers.Completion<Swift.Error>!
+        var responseData: DefaultAuthService.Response?
+        
+        publisher(urlString: "nothttps://netguru.com/api/brokenEndpoint")
+            .sink { status in
+                completionStatus = status
+                expectation1.fulfill()
+            } receiveValue: { value in
+                responseData = value
+            }
+            .store(in: &bag)
+        
+        waitForExpectations(timeout: 0.1)
+        
+        XCTAssertNil(responseData)
+        XCTAssertNotNil(completionStatus)
+    }
+}
+
+private extension NetworkManagerTests {
+    func publisher(urlString: String) -> AnyPublisher<DefaultAuthService.Response, Error> {
+        sut.publisher(for: URLRequest(url: URL(string: urlString)!))
     }
 }
