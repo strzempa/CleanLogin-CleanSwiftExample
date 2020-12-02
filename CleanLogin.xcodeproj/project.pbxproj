@@ -20,6 +20,7 @@
 		368DAF482576343E00F9DC64 /* CleanLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368DAF472576343E00F9DC64 /* CleanLoginTests.swift */; };
 		368DAF69257635C500F9DC64 /* LoginSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368DAF68257635C500F9DC64 /* LoginSceneInteractor.swift */; };
 		368DAF712576363F00F9DC64 /* LoginScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368DAF702576363F00F9DC64 /* LoginScenePresenter.swift */; };
+		3694210B25781C390026B899 /* AuthServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3694210A25781C390026B899 /* AuthServiceTests.swift */; };
 		36A281A82577A46500147E7A /* LoginSceneViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281A72577A46500147E7A /* LoginSceneViewControllerTests.swift */; };
 		36A281AE2577C49300147E7A /* LoginSceneInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281AD2577C49300147E7A /* LoginSceneInteractorTests.swift */; };
 		36A281B52577CEEB00147E7A /* LoginSceneRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281B42577CEEB00147E7A /* LoginSceneRouterTests.swift */; };
@@ -61,6 +62,7 @@
 		368DAF492576343E00F9DC64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		368DAF68257635C500F9DC64 /* LoginSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneInteractor.swift; sourceTree = "<group>"; };
 		368DAF702576363F00F9DC64 /* LoginScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScenePresenter.swift; sourceTree = "<group>"; };
+		3694210A25781C390026B899 /* AuthServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceTests.swift; sourceTree = "<group>"; };
 		36A281A72577A46500147E7A /* LoginSceneViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneViewControllerTests.swift; sourceTree = "<group>"; };
 		36A281AD2577C49300147E7A /* LoginSceneInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneInteractorTests.swift; sourceTree = "<group>"; };
 		36A281B12577CBB300147E7A /* CleanLogin.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CleanLogin.xctestplan; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		368DAF462576343E00F9DC64 /* CleanLoginTests */ = {
 			isa = PBXGroup;
 			children = (
+				3694210925781C2C0026B899 /* Services */,
 				36A281C52577DAA900147E7A /* Managers */,
 				36A281A52577A42F00147E7A /* Scenes */,
 				368DAF472576343E00F9DC64 /* CleanLoginTests.swift */,
@@ -175,6 +178,14 @@
 				365AF3AD257643EA004482EE /* LoginSceneAuthWorker.swift */,
 			);
 			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		3694210925781C2C0026B899 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3694210A25781C390026B899 /* AuthServiceTests.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		36A281A52577A42F00147E7A /* Scenes */ = {
@@ -360,6 +371,7 @@
 				36A281C72577DAB600147E7A /* NetworkManagerTests.swift in Sources */,
 				36A281B92577D1D300147E7A /* LoginSceneAuthWorkerTests.swift in Sources */,
 				36A281A82577A46500147E7A /* LoginSceneViewControllerTests.swift in Sources */,
+				3694210B25781C390026B899 /* AuthServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

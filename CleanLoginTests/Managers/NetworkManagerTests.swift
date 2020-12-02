@@ -28,15 +28,13 @@ final class NetworkManagerTests: XCTestCase {
         super.tearDown()
     }
         
-    func test_givenNetworkManager_whenPublisherSinkedOnProperEndpoint_andShouldNotAuthorize_thenReturnsNoData() {
+    func test_givenNetworkManager_whenPublisherSinkedOnProperEndpoint_andShouldNotAuthorize_thenReturnsData() {
         session.shouldAuthorizeStub = false
         let expectation1 = expectation(description: "Wait for publisher to return")
-        var completionStatus: Combine.Subscribers.Completion<Swift.Error>!
         var responseData: DefaultAuthService.Response?
         
         publisher(urlString: "nothttps://netguru.com/api/authMeInPlease")
-            .sink { status in
-                completionStatus = status
+            .sink { _ in
             } receiveValue: { value in
                 responseData = value
                 expectation1.fulfill()
@@ -46,10 +44,10 @@ final class NetworkManagerTests: XCTestCase {
         waitForExpectations(timeout: 0.1)
         
         XCTAssertNotNil(responseData)
-        XCTAssertEqual(completionStatus.debugDescription, "Optional(Combine.Subscribers.Completion<Swift.Error>.finished)")
+        XCTAssertFalse(responseData!.authorized)
     }
     
-    func test__givenNetworkManager_whenPublisherSinkedOnProperEndpoint_andShouldAuthorize_thenReturnsNoData() {
+    func test__givenNetworkManager_whenPublisherSinkedOnProperEndpoint_andShouldAuthorize_thenReturnsData() {
         session.shouldAuthorizeStub = true
         let expectation1 = expectation(description: "Wait for publisher to return")
         var completionStatus: Combine.Subscribers.Completion<Swift.Error>!
