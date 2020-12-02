@@ -25,6 +25,7 @@
 		36A281B52577CEEB00147E7A /* LoginSceneRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281B42577CEEB00147E7A /* LoginSceneRouterTests.swift */; };
 		36A281B92577D1D300147E7A /* LoginSceneAuthWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281B82577D1D300147E7A /* LoginSceneAuthWorkerTests.swift */; };
 		36A281C22577D8BA00147E7A /* LoginScenePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281C12577D8BA00147E7A /* LoginScenePresenterTests.swift */; };
+		36A281C72577DAB600147E7A /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281C62577DAB600147E7A /* NetworkManagerTests.swift */; };
 		36EC7D7C2577936D00253877 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EC7D7B2577936D00253877 /* AuthService.swift */; };
 		36EC7D882577941E00253877 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EC7D872577941E00253877 /* NetworkManager.swift */; };
 		36EC7D8E2577947800253877 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EC7D8D2577947800253877 /* NetworkSession.swift */; };
@@ -66,6 +67,7 @@
 		36A281B42577CEEB00147E7A /* LoginSceneRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneRouterTests.swift; sourceTree = "<group>"; };
 		36A281B82577D1D300147E7A /* LoginSceneAuthWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneAuthWorkerTests.swift; sourceTree = "<group>"; };
 		36A281C12577D8BA00147E7A /* LoginScenePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScenePresenterTests.swift; sourceTree = "<group>"; };
+		36A281C62577DAB600147E7A /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		36EC7D7B2577936D00253877 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		36EC7D872577941E00253877 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		36EC7D8D2577947800253877 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		368DAF462576343E00F9DC64 /* CleanLoginTests */ = {
 			isa = PBXGroup;
 			children = (
+				36A281C52577DAA900147E7A /* Managers */,
 				36A281A52577A42F00147E7A /* Scenes */,
 				368DAF472576343E00F9DC64 /* CleanLoginTests.swift */,
 				368DAF492576343E00F9DC64 /* Info.plist */,
@@ -192,6 +195,14 @@
 				36A281C12577D8BA00147E7A /* LoginScenePresenterTests.swift */,
 			);
 			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		36A281C52577DAA900147E7A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				36A281C62577DAB600147E7A /* NetworkManagerTests.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		36EC7D7A2577935C00253877 /* Services */ = {
@@ -346,6 +357,7 @@
 				36A281B52577CEEB00147E7A /* LoginSceneRouterTests.swift in Sources */,
 				368DAF482576343E00F9DC64 /* CleanLoginTests.swift in Sources */,
 				36A281C22577D8BA00147E7A /* LoginScenePresenterTests.swift in Sources */,
+				36A281C72577DAB600147E7A /* NetworkManagerTests.swift in Sources */,
 				36A281B92577D1D300147E7A /* LoginSceneAuthWorkerTests.swift in Sources */,
 				36A281A82577A46500147E7A /* LoginSceneViewControllerTests.swift in Sources */,
 			);
