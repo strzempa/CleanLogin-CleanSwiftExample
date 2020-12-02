@@ -12,7 +12,7 @@ protocol NetworkSession: AnyObject {
     func publisher(for  request: URLRequest) -> AnyPublisher<Data, Error>
 }
 
-class MockNetworkSession: NetworkSession {
+final class MockNetworkSession: NetworkSession {
     func publisher(for request: URLRequest) -> AnyPublisher<Data, Error> {
         #if DEBUG
         

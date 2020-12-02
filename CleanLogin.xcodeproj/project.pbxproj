@@ -22,6 +22,9 @@
 		368DAF712576363F00F9DC64 /* LoginScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368DAF702576363F00F9DC64 /* LoginScenePresenter.swift */; };
 		36A281A82577A46500147E7A /* LoginSceneViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281A72577A46500147E7A /* LoginSceneViewControllerTests.swift */; };
 		36A281AE2577C49300147E7A /* LoginSceneInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281AD2577C49300147E7A /* LoginSceneInteractorTests.swift */; };
+		36A281B52577CEEB00147E7A /* LoginSceneRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281B42577CEEB00147E7A /* LoginSceneRouterTests.swift */; };
+		36A281B92577D1D300147E7A /* LoginSceneAuthWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281B82577D1D300147E7A /* LoginSceneAuthWorkerTests.swift */; };
+		36A281C22577D8BA00147E7A /* LoginScenePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281C12577D8BA00147E7A /* LoginScenePresenterTests.swift */; };
 		36EC7D7C2577936D00253877 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EC7D7B2577936D00253877 /* AuthService.swift */; };
 		36EC7D882577941E00253877 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EC7D872577941E00253877 /* NetworkManager.swift */; };
 		36EC7D8E2577947800253877 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EC7D8D2577947800253877 /* NetworkSession.swift */; };
@@ -60,6 +63,9 @@
 		36A281A72577A46500147E7A /* LoginSceneViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneViewControllerTests.swift; sourceTree = "<group>"; };
 		36A281AD2577C49300147E7A /* LoginSceneInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneInteractorTests.swift; sourceTree = "<group>"; };
 		36A281B12577CBB300147E7A /* CleanLogin.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CleanLogin.xctestplan; sourceTree = "<group>"; };
+		36A281B42577CEEB00147E7A /* LoginSceneRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneRouterTests.swift; sourceTree = "<group>"; };
+		36A281B82577D1D300147E7A /* LoginSceneAuthWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneAuthWorkerTests.swift; sourceTree = "<group>"; };
+		36A281C12577D8BA00147E7A /* LoginScenePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScenePresenterTests.swift; sourceTree = "<group>"; };
 		36EC7D7B2577936D00253877 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		36EC7D872577941E00253877 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		36EC7D8D2577947800253877 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
@@ -181,6 +187,9 @@
 			children = (
 				36A281A72577A46500147E7A /* LoginSceneViewControllerTests.swift */,
 				36A281AD2577C49300147E7A /* LoginSceneInteractorTests.swift */,
+				36A281B42577CEEB00147E7A /* LoginSceneRouterTests.swift */,
+				36A281B82577D1D300147E7A /* LoginSceneAuthWorkerTests.swift */,
+				36A281C12577D8BA00147E7A /* LoginScenePresenterTests.swift */,
 			);
 			path = LoginScene;
 			sourceTree = "<group>";
@@ -334,7 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				36A281AE2577C49300147E7A /* LoginSceneInteractorTests.swift in Sources */,
+				36A281B52577CEEB00147E7A /* LoginSceneRouterTests.swift in Sources */,
 				368DAF482576343E00F9DC64 /* CleanLoginTests.swift in Sources */,
+				36A281C22577D8BA00147E7A /* LoginScenePresenterTests.swift in Sources */,
+				36A281B92577D1D300147E7A /* LoginSceneAuthWorkerTests.swift in Sources */,
 				36A281A82577A46500147E7A /* LoginSceneViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
