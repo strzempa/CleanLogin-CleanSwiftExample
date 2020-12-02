@@ -16,7 +16,7 @@ protocol LoginInteractorOutput: AnyObject {
 
 final class LoginSceneInteractor {
     var presenter: LoginScenePresenterInput?
-    var authWorker: LoginSceneAuthWorker?
+    var authWorker: LoginSceneAuthLogic?
 }
 
 extension LoginSceneInteractor: LoginSceneInteractorInput {

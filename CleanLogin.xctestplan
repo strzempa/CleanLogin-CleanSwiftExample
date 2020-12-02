@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "309C1C18-FDD0-4EFA-8A3C-7C32072CDF5C",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CleanLogin.xcodeproj",
+      "identifier" : "368DAF2C2576343C00F9DC64",
+      "name" : "CleanLogin"
+    },
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CleanLogin.xcodeproj",
+        "identifier" : "368DAF422576343E00F9DC64",
+        "name" : "CleanLoginTests"
+      }
+    }
+  ],
+  "version" : 1
+}

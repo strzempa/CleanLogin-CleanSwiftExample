@@ -18,9 +18,10 @@
 		368DAF3A2576343E00F9DC64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368DAF392576343E00F9DC64 /* Assets.xcassets */; };
 		368DAF3D2576343E00F9DC64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368DAF3B2576343E00F9DC64 /* LaunchScreen.storyboard */; };
 		368DAF482576343E00F9DC64 /* CleanLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368DAF472576343E00F9DC64 /* CleanLoginTests.swift */; };
-		368DAF532576343E00F9DC64 /* CleanLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368DAF522576343E00F9DC64 /* CleanLoginUITests.swift */; };
 		368DAF69257635C500F9DC64 /* LoginSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368DAF68257635C500F9DC64 /* LoginSceneInteractor.swift */; };
 		368DAF712576363F00F9DC64 /* LoginScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368DAF702576363F00F9DC64 /* LoginScenePresenter.swift */; };
+		36A281A82577A46500147E7A /* LoginSceneViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281A72577A46500147E7A /* LoginSceneViewControllerTests.swift */; };
+		36A281AE2577C49300147E7A /* LoginSceneInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A281AD2577C49300147E7A /* LoginSceneInteractorTests.swift */; };
 		36EC7D7C2577936D00253877 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EC7D7B2577936D00253877 /* AuthService.swift */; };
 		36EC7D882577941E00253877 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EC7D872577941E00253877 /* NetworkManager.swift */; };
 		36EC7D8E2577947800253877 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EC7D8D2577947800253877 /* NetworkSession.swift */; };
@@ -30,13 +31,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		368DAF442576343E00F9DC64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 368DAF252576343C00F9DC64 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 368DAF2C2576343C00F9DC64;
-			remoteInfo = CleanLogin;
-		};
-		368DAF4F2576343E00F9DC64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 368DAF252576343C00F9DC64 /* Project object */;
 			proxyType = 1;
@@ -61,11 +55,11 @@
 		368DAF432576343E00F9DC64 /* CleanLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		368DAF472576343E00F9DC64 /* CleanLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanLoginTests.swift; sourceTree = "<group>"; };
 		368DAF492576343E00F9DC64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		368DAF4E2576343E00F9DC64 /* CleanLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		368DAF522576343E00F9DC64 /* CleanLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanLoginUITests.swift; sourceTree = "<group>"; };
-		368DAF542576343E00F9DC64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		368DAF68257635C500F9DC64 /* LoginSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneInteractor.swift; sourceTree = "<group>"; };
 		368DAF702576363F00F9DC64 /* LoginScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScenePresenter.swift; sourceTree = "<group>"; };
+		36A281A72577A46500147E7A /* LoginSceneViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneViewControllerTests.swift; sourceTree = "<group>"; };
+		36A281AD2577C49300147E7A /* LoginSceneInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneInteractorTests.swift; sourceTree = "<group>"; };
+		36A281B12577CBB300147E7A /* CleanLogin.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CleanLogin.xctestplan; sourceTree = "<group>"; };
 		36EC7D7B2577936D00253877 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		36EC7D872577941E00253877 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		36EC7D8D2577947800253877 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
@@ -82,13 +76,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		368DAF402576343E00F9DC64 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		368DAF4B2576343E00F9DC64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -117,9 +104,9 @@
 		368DAF242576343C00F9DC64 = {
 			isa = PBXGroup;
 			children = (
+				36A281B12577CBB300147E7A /* CleanLogin.xctestplan */,
 				368DAF2F2576343C00F9DC64 /* CleanLogin */,
 				368DAF462576343E00F9DC64 /* CleanLoginTests */,
-				368DAF512576343E00F9DC64 /* CleanLoginUITests */,
 				368DAF2E2576343C00F9DC64 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,7 +116,6 @@
 			children = (
 				368DAF2D2576343C00F9DC64 /* CleanLogin.app */,
 				368DAF432576343E00F9DC64 /* CleanLoginTests.xctest */,
-				368DAF4E2576343E00F9DC64 /* CleanLoginUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,19 +140,11 @@
 		368DAF462576343E00F9DC64 /* CleanLoginTests */ = {
 			isa = PBXGroup;
 			children = (
+				36A281A52577A42F00147E7A /* Scenes */,
 				368DAF472576343E00F9DC64 /* CleanLoginTests.swift */,
 				368DAF492576343E00F9DC64 /* Info.plist */,
 			);
 			path = CleanLoginTests;
-			sourceTree = "<group>";
-		};
-		368DAF512576343E00F9DC64 /* CleanLoginUITests */ = {
-			isa = PBXGroup;
-			children = (
-				368DAF522576343E00F9DC64 /* CleanLoginUITests.swift */,
-				368DAF542576343E00F9DC64 /* Info.plist */,
-			);
-			path = CleanLoginUITests;
 			sourceTree = "<group>";
 		};
 		368DAF66257635AA00F9DC64 /* Scenes */ = {
@@ -186,6 +164,23 @@
 				365AF39725763B28004482EE /* LoginSceneConfigurator.swift */,
 				365AF39F25763CAF004482EE /* LoginSceneRouter.swift */,
 				365AF3AD257643EA004482EE /* LoginSceneAuthWorker.swift */,
+			);
+			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		36A281A52577A42F00147E7A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				36A281A62577A43700147E7A /* LoginScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		36A281A62577A43700147E7A /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				36A281A72577A46500147E7A /* LoginSceneViewControllerTests.swift */,
+				36A281AD2577C49300147E7A /* LoginSceneInteractorTests.swift */,
 			);
 			path = LoginScene;
 			sourceTree = "<group>";
@@ -255,24 +250,6 @@
 			productReference = 368DAF432576343E00F9DC64 /* CleanLoginTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		368DAF4D2576343E00F9DC64 /* CleanLoginUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 368DAF5D2576343E00F9DC64 /* Build configuration list for PBXNativeTarget "CleanLoginUITests" */;
-			buildPhases = (
-				368DAF4A2576343E00F9DC64 /* Sources */,
-				368DAF4B2576343E00F9DC64 /* Frameworks */,
-				368DAF4C2576343E00F9DC64 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				368DAF502576343E00F9DC64 /* PBXTargetDependency */,
-			);
-			name = CleanLoginUITests;
-			productName = CleanLoginUITests;
-			productReference = 368DAF4E2576343E00F9DC64 /* CleanLoginUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -286,10 +263,6 @@
 						CreatedOnToolsVersion = 12.1;
 					};
 					368DAF422576343E00F9DC64 = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = 368DAF2C2576343C00F9DC64;
-					};
-					368DAF4D2576343E00F9DC64 = {
 						CreatedOnToolsVersion = 12.1;
 						TestTargetID = 368DAF2C2576343C00F9DC64;
 					};
@@ -310,7 +283,6 @@
 			targets = (
 				368DAF2C2576343C00F9DC64 /* CleanLogin */,
 				368DAF422576343E00F9DC64 /* CleanLoginTests */,
-				368DAF4D2576343E00F9DC64 /* CleanLoginUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -328,13 +300,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		368DAF412576343E00F9DC64 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		368DAF4C2576343E00F9DC64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,15 +333,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A281AE2577C49300147E7A /* LoginSceneInteractorTests.swift in Sources */,
 				368DAF482576343E00F9DC64 /* CleanLoginTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		368DAF4A2576343E00F9DC64 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				368DAF532576343E00F9DC64 /* CleanLoginUITests.swift in Sources */,
+				36A281A82577A46500147E7A /* LoginSceneViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,11 +346,6 @@
 			isa = PBXTargetDependency;
 			target = 368DAF2C2576343C00F9DC64 /* CleanLogin */;
 			targetProxy = 368DAF442576343E00F9DC64 /* PBXContainerItemProxy */;
-		};
-		368DAF502576343E00F9DC64 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 368DAF2C2576343C00F9DC64 /* CleanLogin */;
-			targetProxy = 368DAF4F2576343E00F9DC64 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -601,44 +555,6 @@
 			};
 			name = Release;
 		};
-		368DAF5E2576343E00F9DC64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CleanLoginUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.netguru.bn-cleanLogin.CleanLoginUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CleanLogin;
-			};
-			name = Debug;
-		};
-		368DAF5F2576343E00F9DC64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CleanLoginUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.netguru.bn-cleanLogin.CleanLoginUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CleanLogin;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -665,15 +581,6 @@
 			buildConfigurations = (
 				368DAF5B2576343E00F9DC64 /* Debug */,
 				368DAF5C2576343E00F9DC64 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		368DAF5D2576343E00F9DC64 /* Build configuration list for PBXNativeTarget "CleanLoginUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				368DAF5E2576343E00F9DC64 /* Debug */,
-				368DAF5F2576343E00F9DC64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
